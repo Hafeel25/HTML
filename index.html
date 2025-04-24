@@ -13,6 +13,32 @@
       a{
         background-color:aqua;
       }
+      p::before{
+        content: "Before:"; 
+        color:blueviolet;
+      }
+      p::after{
+        content:"after:";
+        color:blue
+      }
+      p::first-letter{
+        font-weight: bold;
+      }
+      .paragraph-example::first-line{
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      ul.example-marker li::marker{
+        color: red;
+        font-size: 2rem;
+      }
+      ul.example-marker{
+        list-style-type: square;
+      }
+      
+
+      
     </style>
   </head>
 <body>
@@ -25,7 +51,7 @@
   <a href="anchor_link.html">anchor</a></br>
 </br>
 </br>
-  <p style="color:brown";>
+  <p class="paragraph-example">
     Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, a programming language.
 
 Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.
@@ -38,6 +64,13 @@ HTML elements are the building blocks of HTML pages. With HTML constructs, image
   <img style="border-color: blue;border-width: 5cm;" height="200px" src="/images/image1.jpg" alt=" Landscape"/>
    
    <p style="background-color:bisque; text-align:center;font-size:100px;color:blue">New change</p>
+
+   <ul class="example-marker">
+    <li>List 1</li>
+    <li>List 2</li>
+    <Li>List 3</Li>
+
+   </ul>
 
 
 </body>
